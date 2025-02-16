@@ -1,0 +1,34 @@
+The issue is solved by increasing the specificity of the selector targeting the paragraph inside the container div.  We can do this by adding another class to the paragraph or by using a more specific selector such as the `:nth-child` pseudo selector. We can solve this issue in two ways, this example shows both ways:
+
+**Solution 1 (Using a more specific selector):**
+
+```css
+div.container p {
+  color: blue;
+}
+p {
+  color: red; 
+}
+```
+
+**Solution 2 (Adding an additional class):**
+
+```css
+div.container p.container-paragraph {
+  color: blue;
+}
+p {
+  color: red; 
+}
+```
+
+**Solution 3 (Using !important, least recommended):**
+
+```css
+div.container p {
+  color: blue !important;
+}
+p {
+  color: red; 
+}
+```
