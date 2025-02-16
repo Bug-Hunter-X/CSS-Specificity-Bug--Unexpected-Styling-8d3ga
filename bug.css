@@ -1,0 +1,10 @@
+The following CSS code snippet demonstrates a common error:  Specificity issues leading to unexpected styling. The intention is to style the paragraph within the div with the class "container", but the style applied to all paragraphs overrides it due to higher specificity.:
+
+```css
+div.container p {
+  color: blue;
+}
+p {
+  color: red; 
+}
+```
